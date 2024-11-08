@@ -1,0 +1,14 @@
+{
+  "name": "a_life_well_lived",
+  "version": "1.0.0",
+  "description": "Obituary services provided by composition by carnes",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Halden Kavanagh",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
