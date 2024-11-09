@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1d4ed8',
-        secondary: '#9333ea',
-        accent: '#14b8a6',
+        beige: "#f5e5c1",
+        brown: "#4a4437",
+        accent: "#14b8a6",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ["Inter", "sans-serif"],
       },
     },
   },

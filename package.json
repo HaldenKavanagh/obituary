@@ -4,7 +4,8 @@
   "description": "Obituary services provided by composition by carnes",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "tailwind": " npx tailwindcss -i ./tailwind.css -o ./public/css/tailwind-output.css --watch"
   },
   "author": "Halden Kavanagh",
   "license": "ISC",
