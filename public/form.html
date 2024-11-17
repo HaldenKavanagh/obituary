@@ -1,2 +1,43 @@
-email fax todays date name age sex home adress SSN Date of death Place of
-deathDate of bearth place of bearthfathers name mother's maiden name
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/tailwind-output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-beige w-full flex flex-col items-center justify-center">
+    <header class="w-full text-center">
+      <h2 class="text-5xl border-b-2 border-brown py-3 font-playfair">
+        A LIFE WELL LIVED
+      </h2>
+    </header>
+
+    <form id="contact-form">
+      <input type="hidden" name="contact_number" value="697483" />
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message"></textarea>
+      <input type="submit" value="Send" />
+    </form>
+
+    <!-- footer -->
+    <footer class="border-t-2 border-brown w-full text-center py-3">
+      <p>162 Eldorado Drive</p>
+      <p>Superior, CO</p>
+      <p>80027</p>
+      <p><a href="tel:+3038099844">(303) 809-9844</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

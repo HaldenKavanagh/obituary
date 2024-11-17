@@ -4,84 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/tailwind-output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-beige w-full flex flex-col items-center justify-center">
     <header class="w-full text-center">
-      <h1 class="text-5xl border-b-2 border-brown">A LIFE WELL LIVED</h1>
+      <h2 class="text-5xl border-b-2 border-brown py-3 font-playfair">
+        A LIFE WELL LIVED
+      </h2>
     </header>
+    <img src="assets/images/sunset.png" class="w-1/2 my-5 rounded-md" />
     <div
       class="w-full flex flex-col items-center justify-center text-center md:w-1/2 mx-11"
     >
       <p>Obituary services provided by:</p>
-      <h2 class="text-3xl">Composition by Carnes</h2>
+      <h2 class="text-3xl mb-2 font-playfair">Composition by Carnes</h2>
 
-      <a class="bg-white rounded-lg p-3 m-2"> <h1>Get Started</h1></a>
+      <button
+        onclick="location.href='form.html'"
+        class="bg-white rounded-lg p-3 m-2"
+      >
+        <h2>Get Started</h2>
+      </button>
 
-      <!-- testimoniial section -->
-      <section class="my-7">
-        <h1 class="text-2xl">Testimonial</h1>
+      <!-- About Us section -->
+      <section class="">
+        <h2 class="text-2xl my-7 font-playfair">About Us</h2>
         <p>
-          <strong>Michael:</strong>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          volutpat, lacus ut vehicula consectetur, nisl risus faucibus nisi, et
-          feugiat libero dui a eros. Proin a felis at lorem efficitur
-          consectetur. Aenean tincidunt, felis id tincidunt consectetur, arcu
-          eros tincidunt nisl, eget vestibulum libero dui eu velit. Nulla
-          facilisi. Nulla volutpat semper purus, ut dapibus lectus. Sed nec
-          ligula ut elit tristique ullamcorper id ac nulla. Ut ut nulla lorem.
-          Fusce tincidunt turpis ac cursus luctus. Curabitur nec sem et leo
-          suscipit viverra. Nullam interdum tellus at sagittis ultrices. Vivamus
-          vehicula, lorem sit amet malesuada malesuada, ex mi dapibus erat, id
-          elementum lacus velit vel velit. Maecenas auctor dictum lectus, in
-          scelerisque est dictum non. Etiam finibus
+          At Composition by Carnes, we take pride in crafting obituaries
+          specific to the needs of the client. We understand that you’re
+          inundated with grief and the logistics of saying goodbye to a loved
+          one, and we’re honored to help you have one less thing about which to
+          worry. As retired English teachers with 12 years of obituary
+          experience, we possess the skills necessary to write a quality summary
+          of the departed’s life. In addition to traditional obituaries, we’re
+          also delighted to honor the life of your beloved pet.
         </p>
       </section>
-      <!-- About Us section -->
-      <section class="my-7">
-        <h1 class="text-2xl">About Us</h1>
+      <!-- testimoniial section -->
+      <img src="assets/images/sitting.jpg" class="w-1/2 my-5 rounded-md" />
+      <section class="">
+        <h2 class="text-2xl my-7 font-playfair">Testimonial</h2>
         <p>
           <strong>Michael:</strong>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          volutpat, lacus ut vehicula consectetur, nisl risus faucibus nisi, et
-          feugiat libero dui a eros. Proin a felis at lorem efficitur
-          consectetur. Aenean tincidunt, felis id tincidunt consectetur, arcu
-          eros tincidunt nisl, eget vestibulum libero dui eu velit. Nulla
-          facilisi. Nulla volutpat semper purus, ut dapibus lectus. Sed nec
-          ligula ut elit tristique ullamcorper id ac nulla. Ut ut nulla lorem.
-          Fusce tincidunt turpis ac cursus luctus. Curabitur nec sem et leo
-          suscipit viverra. Nullam interdum tellus at sagittis ultrices. Vivamus
-          vehicula, lorem sit amet malesuada malesuada, ex mi dapibus erat, id
-          elementum lacus velit vel velit. Maecenas auctor dictum lectus, in
-          scelerisque est dictum non. Etiam finibus
+          I own and operate Murphy & Associates Funeral Directors. In 2012, Pete
+          and I had known each other from years of playing golf, and I had also
+          known his in-laws well for decades. Once he stopped teaching, I asked
+          him if he’d ever written an obituary. He replied by knocking his first
+          try out of the park: The family was elated. Since then, Pete has been
+          our go-to obituary writer/editor, and the praise from families
+          continues with each one he pens. His writings come through with every
+          ounce of objective information necessary, as well as whatever
+          emotional tone the family requests. Furthermore, due to the nature of
+          the business, we often call on Pete to put together obituaries with a
+          quickly approaching deadline, and he’s always happy and able to work
+          on a tight schedule.
         </p>
       </section>
       <!-- Our Process section -->
-      <section class="my-7">
-        <h1 class="text-2xl">Our Process</h1>
+      <section class="flex flex-col">
+        <h2 class="text-2xl my-7 font-playfair">Our Process</h2>
         <p>
-          <strong>Michael:</strong>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          volutpat, lacus ut vehicula consectetur, nisl risus faucibus nisi, et
-          feugiat libero dui a eros. Proin a felis at lorem efficitur
-          consectetur. Aenean tincidunt, felis id tincidunt consectetur, arcu
-          eros tincidunt nisl, eget vestibulum libero dui eu velit. Nulla
-          facilisi. Nulla volutpat semper purus, ut dapibus lectus. Sed nec
-          ligula ut elit tristique ullamcorper id ac nulla. Ut ut nulla lorem.
-          Fusce tincidunt turpis ac cursus luctus. Curabitur nec sem et leo
-          suscipit viverra. Nullam interdum tellus at sagittis ultrices. Vivamus
-          vehicula, lorem sit amet malesuada malesuada, ex mi dapibus erat, id
-          elementum lacus velit vel velit. Maecenas auctor dictum lectus, in
-          scelerisque est dictum non. Etiam finibus
+          The first step is to contact us via email
+          <a class="text-purple-950" href="mailto:someone@example.com"
+            >(compbycarnes@gmail.com)</a
+          >
+          or phone(<a class="text-purple-950" href="tel:+3038099844"
+            >303-809-9844</a
+          >).
         </p>
+        <p>
+          Next, visit our website [...........] and fill out the the Obituary
+          Worksheet.
+        </p>
+        <p>
+          Provide all the factual information about the deceased. Submit the
+          form.
+        </p>
+        <p>
+          Once we’ve read it, we’ll call you to get more personal information
+          and begin the obituary..
+        </p>
+        <p>
+          Within a day or two, we’ll email you a rough draft, and you’ll have a
+          chance to provide editing feedback.
+        </p>
+        <p>
+          Finally, we’ll finalize the piece and email it back to you and your
+          funeral home for publication and/or a pamphlet for the memorial
+          service.
+        </p>
+        <p class="underline text-lg">Rates:</p>
+        <ul>
+          <li>500 words or less...$200</li>
+          <li>Over 500 words...$300</li>
+        </ul>
+        <p class="underline text-lg">Payment:</p>
+        <ul>
+          <li>Mailed checks (1672 Eldorado Dr., Superior, CO 80027)</li>
+          <li>Venmo</li>
+          <li>PayPal</li>
+          <li>Venmo</li>
+        </ul>
       </section>
-      <a class="bg-white rounded-lg p-3 m-2"> <h1>Get Started</h1></a>
-      <!-- footer -->
-      <footer>
-        <p>162 Eldorado Drive</p>
-        <p>Superior, CO</p>
-        <p>80027</p>
-        <p><a href="tel:+3038099844">(303) 809-9844</a></p>
-      </footer>
+      <a class="bg-white rounded-lg p-3 m-2"> <h2>Get Started</h2></a>
     </div>
+    <!-- footer -->
+    <footer class="border-t-2 border-brown w-full text-center py-3">
+      <p>162 Eldorado Drive</p>
+      <p>Superior, CO</p>
+      <p>80027</p>
+      <p><a href="tel:+3038099844">(303) 809-9844</a></p>
+    </footer>
   </body>
 </html>
