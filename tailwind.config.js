@@ -5,9 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
+        pt: ["PT Serif", "serif"],
       },
       colors: {
-        beige: "#f5ebe0",
+        beige: "#f2e9e4",
         brown: "#4a4437",
         accent: "#14b8a6",
       },
