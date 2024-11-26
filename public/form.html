@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/tailwind-output.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,7 +43,7 @@
       />
       <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Contact Person:</label>
-        <input class="rounded-md px-2 w-full" type="email" name="user_name" />
+        <input class="rounded-md px-2 w-full" type="text" name="user_name" />
       </div>
       <div class="w-full md:w-1/4 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Email:</label>
@@ -89,11 +90,11 @@
           name="cause_of_death_deceased"
         />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-1/3 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Date of Birth:</label>
         <input class="rounded-md px-2 w-full" type="text" name="DOB_deceased" />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-2/3 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Place of Birth:</label>
         <input
           class="rounded-md px-2 w-full"
@@ -111,7 +112,7 @@
         >
         <input class="rounded-md px-2 w-full" type="text" name="mothers_name" />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-full flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
           >High School (Name & Location):</label
         >
@@ -121,7 +122,7 @@
           name="high_school_deceased"
         />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-full flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
           >College/Trade School ( Name, Degree, & Location ):</label
         >
@@ -131,13 +132,23 @@
           name="college_deceased"
         />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-2/3 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Name of Spouse:</label>
         <input class="rounded-md px-2 w-full" type="text" name="spouse_name" />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-1/3 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Date of Marrige:</label>
         <input class="rounded-md px-2 w-full" type="text" name="marrige_date" />
+      </div>
+      <div class="w-full md:w-1/2 flex flex-row pb-5">
+        <label class="mx-3 w-auto whitespace-nowrap"
+          >Location of Marrige:</label
+        >
+        <input
+          class="rounded-md px-2 w-full"
+          type="text"
+          name="marrige_location"
+        />
       </div>
       <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
@@ -149,7 +160,7 @@
           name="spouse_death_info"
         />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-2/3 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Resident of:</label>
         <input
           class="rounded-md px-2 w-full"
@@ -157,7 +168,7 @@
           name="residency_deceased"
         />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-1/3 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
           >Length of time in area:</label
         >
@@ -167,7 +178,7 @@
           name="residency_length_deceased"
         />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-full flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Moved to area from:</label>
         <input
           class="rounded-md px-2 w-full"
@@ -181,19 +192,20 @@
           location(s), years employed and special projects, assignments,
           etc.)</label
         >
-        <input
-          class="rounded-md px-2 w-full"
-          type="text"
+        <textarea
+          class="w-full h-48 rounded-md px-3 py-2 border-2 border-gray-400 bg-gray-100"
           name="descendents_info"
-        />
+          placeholder="Enter additional information here..."
+        ></textarea>
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full md:w-full flex flex-col pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Family Statement:</label>
-        <input
-          class="rounded-md px-2 w-full"
-          type="text"
+
+        <textarea
+          class="w-full h-48 rounded-md px-3 py-2 border-2 border-gray-400 bg-gray-100"
           name="family_statement"
-        />
+          placeholder="Enter additional information here..."
+        ></textarea>
       </div>
       <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
@@ -399,12 +411,16 @@
           name="memorial_contribuutions"
         />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
-        <label class="mx-3 w-auto whitespace-nowrap"
+      <div class="w-full md:w-full flex flex-col pb-5">
+        <label class="mx-3 w-full whitespace-nowrap"
           >Please feel free to use this space for any additional information
           about your loved one: hobbies, interests, travel, stories...etc</label
         >
-        <textarea class="w-full h-48" name="comments"></textarea>
+        <textarea
+          class="w-full h-48 rounded-md px-3 py-2 border-2 border-gray-400 bg-gray-100"
+          name="comments"
+          placeholder="Enter additional information here..."
+        ></textarea>
       </div>
 
       <input
