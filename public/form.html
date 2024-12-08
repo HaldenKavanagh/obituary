@@ -34,7 +34,7 @@
       >Click here to download the form</a
     >
 
-    <form class="w-2/3 flex flex-wrap" id="contact-form ">
+    <form class="w-2/3 flex flex-wrap" id="contact-form">
       <input
         class="w-full"
         type="hidden"
@@ -51,9 +51,9 @@
       </div>
       <div class="w-full md:w-1/4 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Phone:</label>
-        <input class="rounded-md px-2 w-full" type="email" name="user_phone" />
+        <input class="rounded-md px-2 w-full" type="text" name="user_phone" />
       </div>
-      <div class="w-full md:w-2/3 flex flex-row pb-5">
+      <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Name of Deceased:</label>
         <input
           class="rounded-md px-2 w-full"
@@ -61,11 +61,15 @@
           name="deceased_name"
         />
       </div>
-      <div class="w-full md:w-1/6 flex flex-row pb-5">
+      <div class="w-full md:w-1/4 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Age of deceased:</label>
-        <input class="rounded-md px-2 w-full" type="text" name="age_deceased" />
+        <input
+          class="rounded-md px-2 w-full"
+          type="number"
+          name="age_deceased"
+        />
       </div>
-      <div class="w-full md:w-1/6 flex flex-row pb-5">
+      <div class="w-full md:w-1/4 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Sex:</label>
         <input class="rounded-md px-2 w-full" type="text" name="sex_deceased" />
       </div>
