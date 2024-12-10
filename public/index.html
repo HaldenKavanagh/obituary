@@ -11,146 +11,156 @@
       rel="stylesheet"
     />
   </head>
-  <body
-    class="bg-beige w-full flex flex-col items-center justify-center font-pt"
-  >
+  <body class="bg-beige w-full font-pt">
     <header class="w-full text-center">
       <h2 class="text-5xl border-b-2 border-brown py-3 font-playfair">
         A LIFE WELL LIVED
       </h2>
     </header>
-    <img src="assets/images/sunset.jpg" class="w-1/3 my-5 rounded-md" />
     <div
-      class="w-full flex flex-col items-center justify-center text-center md:w-1/2 px-11"
+      class="max-w-screen-xl mx-auto flex flex-col items-center justify-center"
     >
-      <p>Obituary services provided by:</p>
-      <h2 class="text-3xl mb-2 font-playfair">Composition by Carnes</h2>
-
-      <button
-        onclick="location.href='form.html'"
-        class="bg-white rounded-lg p-3 m-2"
+      <img src="assets/images/sunset.jpg" class="w-1/3 my-5 rounded-md" />
+      <div
+        class="w-full flex flex-col items-center justify-center text-center px-11"
       >
-        <h2>Get Started</h2>
-      </button>
+        <p>Obituary services provided by:</p>
+        <h2 class="text-3xl mb-2 font-playfair">Composition by Carnes</h2>
 
-      <!-- About Us section -->
-      <section class="">
-        <h2 class="text-2xl my-7 font-playfair">About Us</h2>
-        <div class="w-full flex flex-col md:flex-row">
-          <p class="pr-5 w-full md:w-1/2">
-            At Composition by Carnes, we take pride in crafting obituaries
-            specific to the needs of the client. We understand that you’re
-            inundated with grief and the logistics of saying goodbye to a loved
-            one, and we’re honored to help you have one less thing about which
-            to worry. As retired English teachers with 12 years of obituary
-            experience, we possess the skills necessary to write a quality
-            summary of the departed’s life. In addition to traditional
-            obituaries, we’re also delighted to honor the life of your beloved
-            pet.
-          </p>
-          <div class="relative h-[300px] w-[350px]">
-            <!-- back -->
-            <div class="absolute top-20 left-0 h-[200px]">
-              <img
-                src="assets/images/pete.jpg"
-                alt="Base Image"
-                class="shadow-lg rounded-md w-full h-full"
-              />
-            </div>
+        <button
+          onclick="location.href='form.html'"
+          class="bg-white rounded-lg p-3 m-2"
+        >
+          <h2>Get Started</h2>
+        </button>
 
-            <!-- Overlapping Image -->
-            <div
-              class="absolute top-0 right-0 h-[200px] w-[200px] transform rotate-[5deg]"
-            >
-              <img
-                src="assets/images/jim.jpeg"
-                alt="Base Image"
-                class="shadow-lg rounded-md w-full h-full object-cover"
-              />
+        <!-- About Us section -->
+        <section class="">
+          <h2 class="text-2xl my-7 font-playfair">About Us</h2>
+          <div class="w-full grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <p class="pr-5 w-full">
+              At Composition by Carnes, we take pride in crafting obituaries
+              specific to the needs of the client. We understand that you’re
+              inundated with grief and the logistics of saying goodbye to a
+              loved one, and we’re honored to help you have one less thing about
+              which to worry. As retired English teachers with 12 years of
+              obituary experience, we possess the skills necessary to write a
+              quality summary of the departed’s life. In addition to traditional
+              obituaries, we’re also delighted to honor the life of your beloved
+              pet.
+            </p>
+            <div class="relative md:h-[300px] h-[200px] w-[250px] md:w-[350px]">
+              <!-- back -->
+              <div class="absolute top-20 left-0 h-[200px]">
+                <img
+                  src="assets/images/pete.jpg"
+                  alt="Base Image"
+                  class="shadow-lg rounded-md w-full h-full"
+                />
+              </div>
+
+              <!-- Overlapping Image -->
+              <div
+                class="absolute top-0 right-0 md:h-[200px] md:w-[200px] h-[100px] w-[100px] transform rotate-[5deg]"
+              >
+                <img
+                  src="assets/images/jim.jpeg"
+                  alt="Base Image"
+                  class="shadow-lg rounded-md w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- testimoniial section -->
+        </section>
 
-      <section class="">
-        <h2 class="text-2xl my-7 font-playfair">Testimonial</h2>
-        <p>
-          <strong>Michael:</strong>
-          I own and operate Murphy & Associates Funeral Directors. In 2012, Pete
-          and I had known each other from years of playing golf, and I had also
-          known his in-laws well for decades. Once he stopped teaching, I asked
-          him if he’d ever written an obituary. He replied by knocking his first
-          try out of the park: The family was elated. Since then, Pete has been
-          our go-to obituary writer/editor, and the praise from families
-          continues with each one he pens. His writings come through with every
-          ounce of objective information necessary, as well as whatever
-          emotional tone the family requests. Furthermore, due to the nature of
-          the business, we often call on Pete to put together obituaries with a
-          quickly approaching deadline, and he’s always happy and able to work
-          on a tight schedule.
-        </p>
-      </section>
-      <img
-        src="assets/images/sitting.jpg"
-        class="w-full md:w-1/2 mt-7 rounded-md"
-      />
-      <!-- Our Process section -->
-      <section class="flex flex-col">
-        <h2 class="text-2xl my-7 font-playfair">Our Process</h2>
-        <p>
-          The first step is to contact us via email
-          <a class="text-purple-950" href="mailto:someone@example.com"
-            >(compbycarnes@gmail.com)</a
-          >
-          or phone(<a class="text-purple-950" href="tel:+3038099844"
-            >303-809-9844</a
-          >).
-        </p>
-        <p>
-          Next, visit our website [...........] and fill out the the Obituary
-          Worksheet.
-        </p>
-        <p>
-          Provide all the factual information about the deceased. Submit the
-          form.
-        </p>
-        <p>
-          Once we’ve read it, we’ll call you to get more personal information
-          and begin the obituary..
-        </p>
-        <p>
-          Within a day or two, we’ll email you a rough draft, and you’ll have a
-          chance to provide editing feedback.
-        </p>
-        <p>
-          Finally, we’ll finalize the piece and email it back to you and your
-          funeral home for publication and/or a pamphlet for the memorial
-          service.
-        </p>
-        <p class="underline text-lg mt-2">Rates:</p>
-        <ul>
-          <li>500 words or less...$200</li>
-          <li>Over 500 words...$300</li>
-        </ul>
-        <p class="underline text-lg mt-2">Payment:</p>
-        <ul>
-          <li>Mailed checks (1672 Eldorado Dr., Superior, CO 80027)</li>
-          <li>Venmo</li>
-          <li>PayPal</li>
-          <li>Venmo</li>
-        </ul>
-      </section>
-      <button
-        onclick="location.href='form.html'"
-        class="bg-white rounded-lg p-3 m-2"
-      >
-        <h2>Get Started</h2>
-      </button>
+        <!-- Our Process section -->
+        <section class="flex flex-col">
+          <h2 class="text-2xl my-7 font-playfair">Our Process</h2>
+          <p>
+            The first step is to contact us via email
+            <a class="text-purple-950" href="mailto:someone@example.com"
+              >(obitwriter66@gmail.com)</a
+            >
+            or phone(<a class="text-purple-950" href="tel:+3038099844"
+              >303-809-9844</a
+            >).
+          </p>
+          <p>
+            Next, visit our website [...........] and fill out the the Obituary
+            Worksheet.
+          </p>
+          <p>
+            Provide all the factual information about the deceased. Submit the
+            form.
+          </p>
+          <p>
+            Once we’ve read it, we’ll call you to get more personal information
+            and begin the obituary..
+          </p>
+          <p>
+            Within a day or two, we’ll email you a rough draft, and you’ll have
+            a chance to provide editing feedback.
+          </p>
+          <p>
+            Finally, we’ll finalize the piece and email it back to you and your
+            funeral home for publication and/or a pamphlet for the memorial
+            service.
+          </p>
+          <p class="underline text-lg mt-2">Rates:</p>
+          <ul>
+            <li>500 words or less...$200</li>
+            <li>Over 500 words...$300</li>
+          </ul>
+          <p class="underline text-lg mt-2">Payment:</p>
+          <ul>
+            <li>Mailed checks (1672 Eldorado Dr., Superior, CO 80027)</li>
+            <li>Venmo</li>
+            <li>PayPal</li>
+            <li>Venmo</li>
+          </ul>
+        </section>
+
+        <button
+          onclick="location.href='form.html'"
+          class="bg-white rounded-lg p-3 m-2"
+        >
+          <h2>Get Started</h2>
+        </button>
+        <img
+          src="assets/images/sitting.jpg"
+          class="w-full md:w-1/2 mt-7 rounded-md"
+        />
+        <!-- testimoniial section -->
+
+        <section class="">
+          <h2 class="text-2xl my-7 font-playfair">Testimonial</h2>
+          <p>
+            <strong>Michael:</strong>
+            I own and operate Murphy & Associates Funeral Directors. In 2012,
+            Pete and I had known each other from years of playing golf, and I
+            had also known his in-laws well for decades. Once he stopped
+            teaching, I asked him if he’d ever written an obituary. He replied
+            by knocking his first try out of the park: The family was elated.
+            Since then, Pete has been our go-to obituary writer/editor, and the
+            praise from families continues with each one he pens. His writings
+            come through with every ounce of objective information necessary, as
+            well as whatever emotional tone the family requests. Furthermore,
+            due to the nature of the business, we often call on Pete to put
+            together obituaries with a quickly approaching deadline, and he’s
+            always happy and able to work on a tight schedule.
+          </p>
+        </section>
+        <button
+          onclick="location.href='form.html'"
+          class="bg-white rounded-lg p-3 m-2"
+        >
+          <h2>Get Started</h2>
+        </button>
+      </div>
     </div>
     <!-- footer -->
     <footer class="border-t-2 border-brown w-full text-center py-3">
-      <p>162 Eldorado Drive</p>
+      <p>1672 Eldorado Drive</p>
       <p>Superior, CO</p>
       <p>80027</p>
       <p><a href="tel:+3038099844">(303) 809-9844</a></p>
