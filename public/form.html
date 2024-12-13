@@ -231,7 +231,7 @@
           name="military_information"
         />
       </div>
-      <h3 class="text-center">Surviviors</h3>
+      <h3 class="text-center w-full pb-5 text-xl">Surviviors</h3>
       <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Spouse:</label>
         <input class="rounded-md px-2 w-full" type="text" name="spouse" />
@@ -308,13 +308,13 @@
         <label class="mx-3 w-auto whitespace-nowrap"
           >Brothers (include City & State):</label
         >
-        <input class="rounded-md px-2 w-full" type="text" name="daughters" />
+        <input class="rounded-md px-2 w-full" type="text" name="brothers" />
       </div>
       <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
           >Sisters (include City & State):</label
         >
-        <input class="rounded-md px-2 w-full" type="text" name="daughters" />
+        <input class="rounded-md px-2 w-full" type="text" name="sisters" />
       </div>
       <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
@@ -336,17 +336,18 @@
           name="great_grandchildren_number"
         />
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
+      <div class="w-full flex flex-col pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
-          >Preceded in Death by (Names, Relationship & Date):</label
+          >Preceded in death by: (names, relationship, and date)</label
         >
-        <input
-          class="rounded-md px-2 w-full"
-          type="text"
-          name="preceded_in_death"
-        />
+        <textarea
+          class="w-full h-48 rounded-md px-3 py-2 border-2 border-gray-400 bg-gray-100"
+          name="preceded_in_death_by"
+          placeholder="Enter additional information here..."
+        ></textarea>
       </div>
-      <label class="mx-3 w-auto whitespace-nowrap">Visitation:</label>
+      <h3 class="text-center w-full pb-5 text-xl">Visitation:</h3>
+
       <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap">Time</label>
         <input
@@ -383,18 +384,13 @@
         <label class="mx-3 w-auto whitespace-nowrap"
           >Service Information:</label
         >
-        <select name="service_type">
+        <select name="service_type h-auto">
           <option value="funeral">Funeral</option>
           <option value="memorial">Memorial</option>
           <option value="viewing">Graveside</option>
         </select>
       </div>
-      <div class="w-full md:w-1/2 flex flex-row pb-5">
-        <label class="mx-3 w-auto whitespace-nowrap"
-          >Preceded in death by: (names, relationship, and date)</label
-        >
-        <input class="rounded-md px-2 w-full" type="text" name="service" />
-      </div>
+
       <div class="w-full md:w-1/2 flex flex-row pb-5">
         <label class="mx-3 w-auto whitespace-nowrap"
           >Place of burial: (If Applicable)</label
