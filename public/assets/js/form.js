@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("hello from script.js");
-
+  console.log("hello from form.js");
   // Initialize Email.js with your user ID
   emailjs.init({
     publicKey: "FuUQqDZffoBgp7Xd2",
