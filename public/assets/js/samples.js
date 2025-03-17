@@ -4,18 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   thumbnails.forEach((img) => {
     img.addEventListener("click", function () {
-      // Update the large image
-      largeImage.src = this.src;
-
-      // Remove border from all thumbnails
-      thumbnails.forEach((image) => {
-        image.classList.remove("border-blue-500");
-        image.classList.add("border-transparent");
+      // Remove previous selection
+      thumbnails.forEach((thumb) => {
+        thumb.classList.remove("border-gray-800");
+        thumb.classList.add("border-transparent"); // Reset others
       });
 
-      // Add border to the selected image
+      // Add border to the clicked image
       this.classList.remove("border-transparent");
-      this.classList.add("border-blue-500");
+      this.classList.add("border-gray-800");
+
+      // Update the large image
+      largeImage.src = this.src;
     });
   });
 });

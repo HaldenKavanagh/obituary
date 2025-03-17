@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-beige w-full font-pt">
+  <body class="bg-beige w-full font-pt flex flex-col items-center">
     <!-- header -->
     <header class="w-full text-center">
       <h2 class="text-5xl border-b-2 border-brown py-3 font-playfair">
@@ -20,41 +20,51 @@
     </header>
 
     <!-- body -->
-    <div class="w-full text-center p-5">
+    <div class="w-full flex text-center p-5 justify-between">
+      <button
+        onclick="location.href='index.html'"
+        class="bg-white rounded-lg p-3 m-2"
+      >
+        <h2>Back Home</h2>
+      </button>
       <h3 class="text-xl">Check out some of our sample obituaries!</h3>
+      <button
+        onclick="location.href='form.html'"
+        class="bg-white rounded-lg p-3 m-2"
+      >
+        <h2>Get Started</h2>
+      </button>
     </div>
 
     <!-- Grid of Thumbnails -->
-    <div class="grid grid-cols-5 gap-4">
+    <div class="grid grid-cols-3 md:grid-cols-5 gap-4 w-3/4">
       <img
         src="assets/images/samples/BilsteinSample.png"
-        class="rounded-md cursor-pointer border-4 border-transparent"
+        class="rounded-md cursor-pointer border-2 border-gray-800"
       />
       <img
         src="assets/images/samples/CaninoSample.png"
-        class="rounded-md cursor-pointer border-4 border-transparent"
+        class="rounded-md cursor-pointer border-2 border-transparent"
       />
       <img
         src="assets/images/samples/LazzarinoSample.png"
-        class="rounded-md cursor-pointer border-4 border-transparent"
+        class="rounded-md cursor-pointer border-2 border-transparent"
       />
       <img
         src="assets/images/samples/PetersonSample.png"
-        class="rounded-md cursor-pointer border-4 border-transparent"
+        class="rounded-md cursor-pointer border-2 border-transparent"
       />
       <img
         src="assets/images/samples/WeimanSample.png"
-        class="rounded-md cursor-pointer border-4 border-transparent"
+        class="rounded-md cursor-pointer border-2 border-transparent"
       />
     </div>
 
-    <div class="mb-6 flex justify-center">
-      <img
-        id="largeImage"
-        src="assets/images/samples/BilsteinSample.png"
-        class="w-3/4 rounded-md border-4 border-gray-300 m-20"
-      />
-    </div>
+    <img
+      id="largeImage"
+      src="assets/images/samples/BilsteinSample.png"
+      class="md:w-3/4 my-6 w-full rounded-md border-2 border-gray-800"
+    />
 
     <!-- footer -->
     <footer class="border-t-2 border-brown w-full text-center py-3">
